@@ -53,7 +53,7 @@ from the simulator.
 
 If you have access to the Term 2 of CarND, you can find the rubrics [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/c3eb3583-17b2-4d83-abf7-d852ae1b9fff/concepts/f437b8b0-f2d8-43b0-9662-72ac4e4029c1). The result is briefly shown below
 > Comparing the Unscented Kalman filter results with the ground truth data, the RMSE is calculated and the result is as follows.
-  
+  The result shows that the fused data using the UKF provides better position and velocity estimation than only Radar or only Lidar measurements.
 >
  |                | RMSE_px| RMSE_py|RMSE_vx |RMSE_vy |
  |:--------------:|:------:|:------:|:------:|:------:|
@@ -68,7 +68,7 @@ If you have access to the Term 2 of CarND, you can find the rubrics [here](https
 [NIS_lidar]: ./images/nis_lidar.png
 
 ## Consistency check
-   > ### Normalized Innovation Squared (NIS) measures
+   > Normalized Innovation Squared (NIS) result shown below indicates that the UKF estimation is well in the required NIS range in majority of the measurement data (between 5% - 95%), i.e. the implemented UKF is <b>consistent</b>.
    
    ![alt_text][NIS_radar] ![alt_text][NIS_lidar]
 
