@@ -53,6 +53,7 @@ from the simulator.
 If you have access to the Term 2 of CarND, you can find it [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/c3eb3583-17b2-4d83-abf7-d852ae1b9fff/concepts/f437b8b0-f2d8-43b0-9662-72ac4e4029c1). The result is briefly shown below
 > Comparing the Unscented Kalman filter results with the ground truth data, the RMSE is calculated and the result is as follows
    1. Radar only:
+   
         |                | px     | py     | vx     | vy     |
         |:--------------:|:------:|:------:|:------:|:------:|
         |  Radar only    | 0.1560 | 0.1864 | 0.2316 | 0.2743 |
@@ -78,5 +79,5 @@ If you have access to the Term 2 of CarND, you can find it [here](https://classr
 
    ### Normalized Innovation Squared (NIS) measures
    
-    ![alt_text][NIS_radar]
-     ![alt_text][NIS_lidar]
+   ![alt_text][NIS_radar]
+   ![alt_text][NIS_lidar]
