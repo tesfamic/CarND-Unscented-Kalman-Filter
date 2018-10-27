@@ -3,11 +3,11 @@ Self-Driving Car Engineer Nanodegree Program
 
 ## Objective
 
-> To utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy lidar and radar measurements.  
+> To utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy Lidar and Radar measurements.  
 
 ## Requirements to run the project
 
-Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d)
+Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d).
 
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
 
@@ -49,14 +49,13 @@ OUTPUT: values provided by the c++ program to the simulator
 4. Run it: `./UnscentedKF` Previous versions use i/o from text files.  The current state uses i/o
 from the simulator.
 
-## Project implementation results
+## Implementation results
 
 If you have access to the Term 2 of CarND, you can find the rubrics [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/c3eb3583-17b2-4d83-abf7-d852ae1b9fff/concepts/f437b8b0-f2d8-43b0-9662-72ac4e4029c1). The result is briefly shown below
 > Comparing the Unscented Kalman filter results with the ground truth data, the RMSE is calculated and the result is as follows.
   
-  RMSE values for x-position (px), y-position (py), velocity components vx and vy
- 
- |                | px     | py     | vx     | vy     |
+>
+ |                | RMSE_px| RMSE_py|RMSE_vx |RMSE_vy |
  |:--------------:|:------:|:------:|:------:|:------:|
  | Radar only     | 0.1560 | 0.1864 | 0.2316 | 0.2743 |
  | Lidar only     | 0.0962 | 0.0961 | 0.2478 | 0.2331 |
@@ -71,6 +70,5 @@ If you have access to the Term 2 of CarND, you can find the rubrics [here](https
 ## Consistency check
    > ### Normalized Innovation Squared (NIS) measures
    
-   ![alt_text][NIS_radar]
-   ![alt_text][NIS_lidar]
+   ![alt_text][NIS_radar] ![alt_text][NIS_lidar]
 
